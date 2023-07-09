@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="python.css" />
+  </head>
+  <body style="background-color: rgb(28, 25, 25)">
+    <div class="spacing"></div>
+    <div class="border-left border-right">
+      <div class="header">
+        <a href="/home_page.html">
+          <button class="navigation">Home</button>
+        </a>
+        <p class="navigation-text">>> &nbsp;</p>
+        <a href="python-home.html">
+          <button class="navigation">Learn Python</button>
+        </a>
+        <p class="navigation-text">>> &nbsp; Image Processing</p>
+        <a href="https://github.com/derek-naka" target="_blank">
+          <img class="header-img" src="/images/github-img.png" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/derek-nakagawa-77a9aa180/"
+          target="_blank"
+        >
+          <img class="header-img" src="/images/linkedin.png" />
+        </a>
+      </div>
+
+      <div class="border">
+        <h1 class="title white">Image Processing</h1>
+        <p class="paragraph">
+          Image processing is the process of transforming an image into a
+          digital form and performing certain operations to get some useful
+          information from it. For each of the following functions, all of the
+          code and datasets can be found here:
+          <a
+            href="https://github.com/derek-naka/DataRes_Teach_Python"
+            target="_blank"
+          >
+            <button class="navigation">Github</button>
+          </a>
+        </p>
+      </div>
+      <div class="border">
+        <h2 class="subtitles">Initial Image & Dataset</h2>
+        <p class="paragraph">
+          For this section, we are going to use the following image along with
+          PyTesseract to extract text from the image. For this project, you need
+          to download pytesseract and route where you downloaded PyTesseract to
+          the command as seen in the first image at the bottom. From there,
+          follow the code below to run PyTesseract on the image and see what the
+          initial output will be. I chose this image since there is some cursive
+          and other fancy writing that it will not be able to pick up unless
+          there is more image pre-processing that is done.
+        </p>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-data-image-pro.png"
+            alt="An image of data"
+          />
+          <img
+            class="img-custom"
+            src="python_images/python-data-image-pro2.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-data-image-pro-output.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'EST. 1990']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Resize Image</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            Resizing the image will allow for PyTesseract to better read the
+            image provided as the text will be larger and easier for the model
+            to read as compared to a smaller image. In order to do this, follow
+            the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output1.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro1.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 19990', 'MAGN FICO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Gray Scale</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            It helps in simplifying algorithms and as well eliminates the
+            complexities related to computational requirements. It makes room
+            for easier learning for those who are new to image processing. This
+            is because grayscale compressors an image to its barest minimum
+            pixel. In order to do this, follow the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output2.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro2.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 19990', 'MAGN FICO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Histogram Equalization</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            Histogram equalization is a process where the intensity values of an
+            image are adjusted to create a higher overall contrast. Digital
+            Image Processing is a significant aspect of data science. It is used
+            to enhance and modify images so that their attributes are more
+            easily understandable. In order to do this, follow the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output3.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro3.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 1990', 'WMAGNIFICO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Bilateral Filter</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            A bilateral filter is used for smoothening images and reducing
+            noise, while preserving edges. This allows us to ignore small
+            imperfections in the image and make sure that it isn't converted
+            into text. In order to do this, follow the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output4.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro4.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBE RY', 'CABERNET SAU', 'EST. 19990', 'W#AON CO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Image to Binary</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            Images also need to be converted into binary in order for a computer
+            to process them so that they can be seen on our screen. The main
+            advantage of binary images is that it decreases computational load
+            and increases efficiency of the systems. In order to do this, follow
+            the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output5.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro5.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 1990', 'AARORIFICO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Dilation</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            Dilation of an image is the process by which the object area in the
+            image is increased. This process is used to accentuate features in
+            the image (in this case the text). It increases the white region in
+            the image or the size of the foreground object increases. In order
+            to do this, follow the code below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output6.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro6.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 1990', 'MAKONIFICO
+            WINERY']
+          </p>
+        </div>
+
+        <h2 class="subtitles">Erosion</h2>
+        <div class="img-processing-box">
+          <p class="paragraph">
+            Erosion removes pixels on object boundaries. In other words, it
+            shrinks the foreground objects. Enlarge foreground holes. Like in
+            Image Processing Kernels, a larger size of the Structure Element,
+            the effect of Erosion increase. In order to do this, follow the code
+            below:
+          </p>
+          <img
+            class="img-processing-img"
+            src="python_images/python-img-pro-output7.png"
+            alt="An image of data"
+          />
+        </div>
+        <div class="img-processing-box">
+          <img
+            class="img-custom"
+            src="python_images/python-img-pro7.png"
+            alt="An image of data"
+          />
+          <p class="img-processing-output white">
+            Output: ['CHAMBERY', 'CABERNET SAUVIGNON', 'EST. 1990', 'AAORIFICO
+            WIRERY']
+          </p>
+        </div>
+        <h2 class="subtitles">NOTE</h2>
+        <p class="NOTE white">
+          Note that when reading text off of images, it is a mix of these image
+          pre-processing techniques that are required to get the most accurate
+          reading possible. HOWEVER, it is not necessary to use all of them, as
+          seen in the example above. The most accurate reading of the image was
+          after the histogram equalization which shows that not all of the image
+          processing techniques were even helpful, so keep that in mind when
+          using these functions.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

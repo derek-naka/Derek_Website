@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="python.css" />
+  </head>
+  <body style="background-color: rgb(28, 25, 25)">
+    <div class="spacing"></div>
+    <div class="border-left border-right">
+      <div class="header">
+        <a href="/home_page.html">
+          <button class="navigation">Home</button>
+        </a>
+        <p class="navigation-text">>> &nbsp;</p>
+        <a href="python-home.html">
+          <button class="navigation">Learn Python</button>
+        </a>
+        <p class="navigation-text">>> &nbsp; Natural Language Processing</p>
+        <a href="https://github.com/derek-naka" target="_blank">
+          <img class="header-img" src="/images/github-img.png" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/derek-nakagawa-77a9aa180/"
+          target="_blank"
+        >
+          <img class="header-img" src="/images/linkedin.png" />
+        </a>
+      </div>
+
+      <div class="border">
+        <h1 class="title white">Natural Language Processing</h1>
+        <p class="paragraph">
+          Natural language processing (NLP) refers to the branch of computer
+          science—and more specifically, the branch of artificial intelligence
+          or AI—concerned with giving computers the ability to understand text
+          and spoken words in much the same way human beings can. For each of
+          the following functions, all of the code and datasets can be found
+          here:
+          <a
+            href="https://github.com/derek-naka/DataRes_Teach_Python"
+            target="_blank"
+          >
+            <button class="navigation">Github</button>
+          </a>
+        </p>
+      </div>
+      <div class="border">
+        <h2 class="subtitles">Text Statistics</h2>
+        <p class="paragraph">
+          We will be analysing the following data about housing descriptions on
+          Zillow. Note that the data must contain words and preferably
+          sentences.
+        </p>
+        <img
+          class="nlp-img"
+          src="python_images/python-data-nlp.png"
+          alt="An image of data"
+        />
+        <p class="paragraph">
+          Based on of this dataset, we can take a few initial text statistics
+          including the following:
+        </p>
+        <ul class="paragraph">
+          <li>
+            Sentence Count: The number of sentences in the paragraph/description
+          </li>
+          <li>
+            Reading Time: The approximate amount of time required to read the
+            paragraph based on length and complexity of sentences
+          </li>
+          <li>
+            Grade Level: the minimum grade level required to read the paragraph
+            and fully understand it based on vocabulary and sentence structure.
+          </li>
+          <li>
+            Reading Ease: how hard the passage is to read based on length of
+            sentences and number of syllables per word. A score of 100 means
+            your copy is very easy to read. And, a score of 0 means your text is
+            very difficult to read.
+          </li>
+        </ul>
+        <img
+          class="nlp-img"
+          src="python_images/python-nlp1.png"
+          alt="An image of data"
+        />
+        <h2 class="subtitles">Word Vectorization</h2>
+        <p class="paragraph">
+          Converting words to vectors, or word vectorization, is a natural
+          language processing (NLP) process. The process uses language models to
+          map words into vector space. A vector space represents each word by a
+          vector of real numbers. It also allows words with similar meanings
+          have similar representations. The first step in this is to get rid of
+          all of the "stop" word or words that don't have much meaning such as
+          "a", "the", "and", etc. which is represented by the code below:
+        </p>
+        <img
+          class="nlp-img"
+          src="python_images/python-nlp2.png"
+          alt="An image of data"
+        />
+        <p class="paragraph">
+          After removing all of the stop words, we can perform the word
+          vectorization, then reduce it to 3 dimensions using a Principle
+          Component Analysis algorithm. This will make it easier to represent on
+          a graph to see which houses have similar description as compared to a
+          vector with over 10 dimensions.
+        </p>
+        <img
+          class="nlp-img"
+          src="python_images/python-nlp3.png"
+          alt="An image of data"
+        />
+        <p class="paragraph">
+          And with this, this is what the final dataset should look like with
+          new variables all about the description of the home.
+        </p>
+        <img
+          class="nlp-img"
+          src="python_images/python-nlp4.png"
+          alt="An image of data"
+        />
+      </div>
+    </div>
+  </body>
+</html>

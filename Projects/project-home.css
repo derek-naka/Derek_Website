@@ -1,0 +1,152 @@
+.white {
+  color: rgb(253, 253, 253);
+  font-family: "Times New Roman";
+}
+
+.gray {
+  color: rgb(188, 159, 159);
+  font-family: "Times New Roman";
+}
+
+.title {
+  font-size: 45px;
+}
+
+.spacing {
+  margin-top: 100px;
+}
+
+.github-img {
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+  }
+
+.flexbox{
+    display: inline-block;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-color: rgb(128, 132, 126);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-width: 2px;
+}
+
+.textbox{
+    font-size: 15px;
+    width:70%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 2%;
+}
+
+.project-title {
+    font-family: "Times New Roman";    
+    text-decoration: none;
+    color: rgb(236, 224, 224);
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+}
+
+.project-title:hover {
+    font-size: 27px;
+    font-family: "Times New Roman";
+    color: rgb(247, 241, 241);
+    text-decoration: underline;
+    background-color: transparent;
+  }
+
+a {
+    text-decoration: none;
+  }
+
+.project-box {
+  display: inline-block;
+  width: 100%;
+}
+
+.border {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: block; 
+  position: relative;
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.header {
+  display: block;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+.border-right {
+  display: block;
+  margin-right: 3%;
+  border-left: 20px;
+  border-left-style: solid;
+  border-image: linear-gradient(#30e8bf, #ff8235) 20;
+  top: 20%;
+  bottom:0;
+}
+
+.border-left {
+  display: block;
+  margin-left: 3%;
+  border-right: 20px;
+  border-right-style: solid;
+  border-image: linear-gradient(#30e8bf, #ff8235) 20;
+  top: 20%;
+  bottom:0;
+}
+
+.navigation {
+    font-family: "Times New Roman";
+    display:block;
+    color: rgb(203, 187, 187);
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.navigation:hover {
+    font-size: 16px;
+    font-family: "Times New Roman";
+    display:inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 241, 241);
+    color: rgb(247, 241, 241);
+    background-color: transparent;
+}
+
+.navigation-text{
+    font-size:15;
+    color: rgb(203, 187, 187);
+    font-family: 'Times New Roman';
+    display: inline-block;
+}
+
+.header-img{
+  width: 4%;
+  border-radius: 50px;
+  margin-right: 1%;
+  float: right;
+  vertical-align: middle;
+}

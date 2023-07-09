@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="python.css" />
+  </head>
+  <body style="background-color: rgb(28, 25, 25)">
+    <div class="spacing"></div>
+    <div class="border-left border-right">
+      <div class="header">
+        <a href="/home_page.html">
+          <button class="navigation">Home</button>
+        </a>
+        <p class="navigation-text">>> &nbsp;</p>
+        <a href="python-home.html">
+          <button class="navigation">Learn Python</button>
+        </a>
+        <p class="navigation-text">>> &nbsp; Unsupervised Machine Learning</p>
+        <a href="https://github.com/derek-naka" target="_blank">
+          <img class="header-img" src="/images/github-img.png" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/derek-nakagawa-77a9aa180/"
+          target="_blank"
+        >
+          <img class="header-img" src="/images/linkedin.png" />
+        </a>
+      </div>
+
+      <div class="border">
+        <h1 class="title white">Unsupervised Machine Learning</h1>
+        <p class="paragraph">
+          Unsupervised machine learning uses machine learning algorithms to
+          analyze and cluster unlabeled datasets. These algorithms discover
+          hidden patterns or data groupings without the need for human
+          interventionFor each of the following machine learning models, all of
+          the code and datasets can be found here:
+          <a
+            href="https://github.com/derek-naka/DataRes_Teach_Python"
+            target="_blank"
+          >
+            <button class="navigation">Github</button>
+          </a>
+        </p>
+      </div>
+      <div class="border">
+        <h2 class="subtitles">Elbow Method: Number of Clusters</h2>
+        <p class="paragraph">
+          A fundamental step for any unsupervised algorithm is to determine the
+          optimal number of clusters into which the data may be clustered. The
+          Elbow Method is one of the most popular methods to determine this
+          optimal value of k. We now demonstrate the given method using the
+          K-Means clustering technique using the Sklearn library of python.
+          Although it isn't necessary in this situation (because we already know
+          that there are 3 species already) it is nice to know how to do it if
+          you didn't know the amount of cluster groups.
+        </p>
+        <div class="border-machine-learning">
+          <img
+            class="img-custom"
+            src="python_images/python-data-flower.png"
+            alt="An image of data"
+          />
+          <img
+            class="img-custom"
+            src="python_images/python-elbow.png"
+            alt="An image of data"
+          />
+        </div>
+        <img
+          class="data-img"
+          src="python_images/python-elbow-output.png"
+          alt="An image of data"
+        />
+
+        <h2 class="subtitles">Principle Component Analysis</h2>
+        <p class="paragraph">
+          Principal Component Analysis (PCA) is a linear dimensionality
+          reduction technique that can be utilized for extracting information
+          from a high-dimensional space by projecting it into a
+          lower-dimensional sub-space.
+        </p>
+        <img
+          class="unsupervised-code"
+          src="python_images/python-pca.png"
+          alt="An image of data"
+        />
+        <img
+          class="unsupervised-img"
+          src="python_images/python-pca-output.png"
+          alt="An image of data"
+        />
+
+        <h2 class="subtitles">T-Distributed Stochastic Neighbor</h2>
+        <p class="paragraph">
+          T-distributed neighbor embedding (t-SNE) is a dimensionality reduction
+          technique that helps users visualize high-dimensional data sets. It
+          takes the original data that is entered into the algorithm and matches
+          both distributions to determine how to best represent this data using
+          fewer dimensions. t-SNE is another dimensionality reduction algorithm
+          but unlike PCA is able to account for non-linear relationships
+        </p>
+        <img
+          class="unsupervised-code"
+          src="python_images/python-tsne.png"
+          alt="An image of data"
+        />
+
+        <img
+          class="unsupervised-img"
+          src="python_images/python-tsne-output.png"
+          alt="An image of data"
+        />
+        <h2 class="subtitles">K-Nearest Neighbors</h2>
+        <p class="paragraph">
+          Now we need to determine how many surrrounding points are references
+          when predicting a new data point. Now we need to determine how many
+          surrrounding points are references when predicting a new data point.
+          Choosing a small value of K leads to unstable decision boundaries. The
+          substantial K value is better for classification as it leads to
+          smoothening the decision boundaries. We want to choose a k-value whose
+          error is low.
+        </p>
+
+        <img
+          class="unsupervised-code"
+          src="python_images/python-knn.png"
+          alt="An image of data"
+        />
+        <img
+          class="unsupervised-img"
+          src="python_images/python-knn-output.png"
+          alt="An image of data"
+        />
+      </div>
+    </div>
+  </body>
+</html>

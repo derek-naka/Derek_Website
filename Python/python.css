@@ -1,0 +1,152 @@
+.white {
+    color: rgb(253, 253, 253);
+    font-family: "Times New Roman";
+}
+
+.title {
+    font-size: 50px;
+}
+
+.border-right {
+    display: block;
+    margin-right: 3%;
+    border-left: 20px;
+    border-left-style: solid;
+    border-image: linear-gradient(#30e8bf, #ff8235) 20;
+    top: 20%;
+    bottom:0;
+}
+  
+.border-left {
+    display: block;
+    margin-left: 3%;
+    border-right: 20px;
+    border-right-style: solid;
+    border-image: linear-gradient(#30e8bf, #ff8235) 20;
+    top: 20%;
+    bottom:0;
+}
+
+.navigation {
+    font-family: "Times New Roman";
+    display:block;
+    color: rgb(203, 187, 187);
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.navigation:hover {
+    font-size: 16px;
+    font-family: "Times New Roman";
+    display:inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 241, 241);
+    color: rgb(247, 241, 241);
+    background-color: transparent;
+}
+
+.navigation-text{
+    font-size:15;
+    color: rgb(203, 187, 187);
+    font-family: 'Times New Roman';
+    display: inline-block;
+}
+
+.header {
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.border {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.paragraph {
+    text-indent: 30px;
+    font-family: "Times New Roman";
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+.subtitles {
+    font-family: "Times New Roman";
+    color: white;
+    text-align: left;
+    font-size: 40px;
+}
+
+.data-img {
+    width: 40%;
+}
+
+.border-custom {
+    width:50%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.img-custom{
+    width: 100%
+}
+
+.border-machine-learning{
+    width:30%;
+    display: inline-block; 
+    position: relative;
+    text-align: center;
+}
+
+.unsupervised-code {
+    width:50%;
+}
+
+.unsupervised-img {
+    width:30%
+}
+
+.nlp-img {
+    width:70%
+}
+
+.img-processing-box{
+    width:45%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.img-processing-output{
+    font-size: 25px;
+}
+
+.img-processing-img{
+    width:70%;
+}
+
+.NOTE {
+    font-size: 23px;
+    text-align: left;
+}
+
+.header-img{
+    width: 4%;
+    border-radius: 50px;
+    margin-right: 1%;
+    float: right;
+    vertical-align: middle;
+}
